@@ -33,6 +33,11 @@ public class BasePage {
         driver.get(url);
     }
 
+    public static void maximizeWindow()
+    {
+        driver.manage().window().maximize();
+    }
+
     public static void closeBrowser(){
         driver.quit();
     }
@@ -90,5 +95,9 @@ public class BasePage {
         return driver.findElements(By.className(locator));
     }
 
-
+    public static void acceptCookies(String xpath)
+    {
+       WebElement accept = driver.findElement(By.xpath(xpath));
+       accept.click();
+    }
 }
