@@ -6,3 +6,4 @@ Feature: Ford check features
     And for mustang machE click on View Stock
     Then close window
     And will be implemented later
+    And this change from dev1 branch lets c
