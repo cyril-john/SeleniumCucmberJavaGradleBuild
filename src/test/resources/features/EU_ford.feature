@@ -5,4 +5,4 @@ Feature: Ford check features
     Then accepts FORD UK cookies
     And for mustang machE click on View Stock
     Then close window
-    And aded this to see conflicts if any so
+    And will be implemented later
