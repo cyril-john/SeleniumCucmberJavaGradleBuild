@@ -16,6 +16,7 @@ public class GooglePage extends BasePage {
     //methods
     public void navigateToGoogle() {
         navigateTo("https://www.google.com");
+
     }
 
     public void clickGoogleSearch() {
