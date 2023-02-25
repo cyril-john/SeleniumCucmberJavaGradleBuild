@@ -9,8 +9,8 @@ public class ford_UK_steps
     @Given("^navigate to ford UK site$")
     public void navigateTofordUKsite()
     {
-        ford_UK_page.navigateToFord_UK_page();
-        ford_UK_page.maximizeWindow();
+        fordUkPage.navigateToFord_UK_page();
+        fordUkPage.maximizeWindow();
 
     }
 
@@ -19,12 +19,16 @@ public class ford_UK_steps
     public void acceptsFORDUKCookies()
     {
         String cookiesAgree =  "//a[@data-acc-context-type='cookiesAgree']";
-        ford_UK_page.acceptUKcookies(cookiesAgree);
+        fordUkPage.acceptUKcookies(cookiesAgree);
     }
 
     @Then("close window")
     public void closeWindow()
     {
-        ford_UK_page.closeBrowser();
+        fordUkPage.closeBrowser();
+    }
+
+    @And("for mustang machE click on View Stock")
+    public void forMustangMachEClickOnViewStock() {
     }
 }
